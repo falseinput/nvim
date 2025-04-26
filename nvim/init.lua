@@ -6,7 +6,7 @@ require("config.lazy")
 require("lazy").setup("plugins")
 require("mason").setup()
 require("mason-lspconfig").setup {
-	ensure_installed = { "lua_ls", "ts_ls", "denols", "lazygit" }
+	ensure_installed = { "lua_ls", "ts_ls", "denols" }
 }
 require("toggleterm").setup {
 	direction = "float"
@@ -43,3 +43,4 @@ require("flatten").setup({
   },
   block_on_open = true, -- Ensures Lazygit waits until you're done editing
 })
+vim.cmd.colorscheme "catppuccin"
